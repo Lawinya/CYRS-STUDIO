@@ -41,7 +41,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
+  color: #fff;
 }
 
 .brand {
@@ -50,8 +51,9 @@ a {
   gap: 0.75rem;
   font-size: 1.1rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .brand-logo {
@@ -62,31 +64,56 @@ a {
 
 .nav-links {
   display: flex;
-  gap: 1.2rem;
-  color: var(--muted);
+  gap: 1.6rem;
 }
 
-.nav-links a:hover {
-  color: var(--text);
+.nav-links a { color: rgba(255,255,255,0.95); font-weight:600; }
+
+.nav-links a:hover { color: #fff; opacity: .95; }
+
+.hero-panel {
+  max-width: 1180px;
+  margin: 3.2rem auto;
+  background: linear-gradient(135deg, #4b2fb9 0%, #7c63ff 60%);
+  border-radius: 12px;
+  padding: 3rem 0;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 30px 80px rgba(76, 46, 122, 0.18);
 }
+
+.hero-waves {
+  position: absolute;
+  right: -6%;
+  top: 0;
+  width: 72%;
+  height: 100%;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.hero-panel .hero-copy { color: #fff; }
+.hero-panel h1 { color: #fff; }
+.hero-panel .eyebrow { color: rgba(255,255,255,0.85); }
+.hero-panel .button.primary { background: #fff; color: #0b1220; }
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.2fr 0.9fr;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 0 2rem;
+  padding: 3.2rem 0 2rem;
 }
 
 .hero-visual {
-  border-radius: 1.6rem;
-  background: linear-gradient(180deg, rgba(139, 99, 255, 0.06), rgba(255, 107, 107, 0.04));
+  position: relative;
+  border-radius: 12px;
+  background: transparent;
   padding: 1.4rem;
   min-height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border);
 }
 
 .hero-visual svg {
@@ -104,9 +131,9 @@ a {
 }
 
 .hero-actions .button.outline {
-  border: 1px solid rgba(255, 255, 255, 0.17);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   background: transparent;
-  color: var(--text);
+  color: #fff;
 }
 
 .hero-stats {
@@ -296,7 +323,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: clamp(2.6rem, 5vw, 5rem);
 }
 
 h2 {
@@ -304,7 +331,7 @@ h2 {
 }
 
 .lead {
-  color: var(--muted);
+  color: rgba(255,255,255,0.9);
   font-size: 1.05rem;
   max-width: 620px;
 }
@@ -369,7 +396,7 @@ h2 {
 .hero-copy .dynamic-tagline {
   display: block;
   margin-top: 0.8rem;
-  color: var(--accent-2);
+  color: rgba(255,255,255,0.95);
   font-size: 1.05rem;
   font-weight: 600;
 }
