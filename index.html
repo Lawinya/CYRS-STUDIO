@@ -25,51 +25,61 @@
       </nav>
 
       <div class="container hero-content" id="home">
-        <div class="hero-copy">
+        <div class="hero-copy fade-in">
           <p class="eyebrow">Creative digital studio</p>
-          <h1>Designing Meaning Into Every Mark</h1>
-          <p class="lead">
+          <h1 id="hero-headline">Designing Meaning Into Every Mark</h1>
+          <p class="lead" id="hero-subtitle">
             CYRS STUDIO helps founders, teams, and brands turn vision into sharp,
             high-impact online experiences.
           </p>
+          <span class="dynamic-tagline visible" id="dynamic-tagline">Brand identity that moves people.</span>
           <a href="#contact" class="button primary">Start a project</a>
         </div>
-        <div class="hero-card" aria-label="Studio highlights">
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <svg viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hero-grad" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7C9DFF" stop-opacity="0.88" />
+                <stop offset="1" stop-color="#4CE0C2" stop-opacity="0.55" />
+              </linearGradient>
+            </defs>
+            <path d="M68 244C80 118 208 36 326 58C444 80 490 224 430 338C370 452 168 438 88 334C8 230 56 330 68 244Z" fill="url(#hero-grad)" opacity="0.16" />
+            <rect x="92" y="118" width="124" height="96" rx="22" fill="#0A1B32" stroke="#4CE0C2" stroke-width="4" />
+            <rect x="126" y="148" width="58" height="10" rx="5" fill="#DDE8FF" opacity="0.85" />
+            <rect x="126" y="172" width="98" height="10" rx="5" fill="#DDE8FF" opacity="0.65" />
+            <rect x="126" y="196" width="76" height="10" rx="5" fill="#DDE8FF" opacity="0.55" />
+            <path d="M338 84H416C432.091 84 446 97.9086 446 114V176C446 192.091 432.091 206 416 206H338C321.909 206 308 192.091 308 176V114C308 97.9086 321.909 84 338 84Z" fill="#0E2131" stroke="#7C9DFF" stroke-width="4" />
+            <circle cx="374" cy="126" r="8" fill="#DDE8FF" />
+            <circle cx="394" cy="126" r="8" fill="#4CE0C2" />
+            <path d="M346 158H430" stroke="#DDE8FF" stroke-width="10" stroke-linecap="round" opacity="0.8" />
+            <path d="M192 286C198 276 216 264 242 270C268 276 288 292 300 306" stroke="#DDE8FF" stroke-width="6" stroke-linecap="round" opacity="0.55" />
+            <circle cx="398" cy="298" r="28" fill="#4CE0C2" opacity="0.18" />
+            <circle cx="386" cy="292" r="6" fill="#4CE0C2" />
+            <circle cx="106" cy="348" r="5" fill="#DDE8FF" opacity="0.75" />
+            <circle cx="430" cy="246" r="4" fill="#DDE8FF" opacity="0.75" />
+            <path d="M58 92L72 108" stroke="#DDE8FF" stroke-width="4" stroke-linecap="round" />
+            <path d="M96 62L108 74" stroke="#DDE8FF" stroke-width="4" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="hero-card fade-in" aria-label="Studio highlights" id="hero-highlights">
           <div class="card-pill">Strategy • Design • Build</div>
-          <ul>
-            <li>Brand-forward web experiences</li>
-            <li>Modern UI systems and interfaces</li>
-            <li>Launch-ready sites and product pages</li>
-          </ul>
+          <ul id="highlight-list"></ul>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section" id="services">
+      <section class="section fade-in" id="services">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">What we do</p>
             <h2>Focused services for modern brands.</h2>
           </div>
-          <div class="card-grid">
-            <article class="info-card">
-              <h3>Brand Identity</h3>
-              <p>Positioning, messaging, and visual direction that feel true to your story.</p>
-            </article>
-            <article class="info-card">
-              <h3>Web Design</h3>
-              <p>Elegant interfaces designed for clarity, personality, and conversion.</p>
-            </article>
-            <article class="info-card">
-              <h3>Development</h3>
-              <p>Responsive, performant builds that bring your product to life online.</p>
-            </article>
-          </div>
+          <div class="card-grid" id="services-grid"></div>
         </div>
       </section>
 
-      <section class="section section-alt" id="about">
+      <section class="section section-alt fade-in" id="about">
         <div class="container split">
           <div>
             <p class="eyebrow">Our Mission</p>
@@ -81,8 +91,8 @@
         </div>
       </section>
 
-      <section class="section" id="contact">
-        <div class="container contact-box">
+      <section class="section fade-in" id="contact">
+        <div class="container contact-box fade-in">
           <div>
             <p class="eyebrow">Let’s connect</p>
             <h2>Ready to bring your next idea to life?</h2>
@@ -94,9 +104,10 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <span>© 2026 CYRS STUDIO</span>
+        <span id="footer-year">© 2026 CYRS STUDIO</span>
         <span>Creative Studio • Digital Experiences</span>
       </div>
     </footer>
+    <script defer src="script.js"></script>
   </body>
 </html>
