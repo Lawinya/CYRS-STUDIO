@@ -124,6 +124,43 @@ a {
   margin-top: 2rem;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.portfolio-card a { display: block; color: inherit; }
+
+.portfolio-image {
+  width: 100%;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.portfolio-copy {
+  padding: 1rem 1.2rem 1.4rem;
+}
+
+.portfolio-copy h3 {
+  margin: 0 0 0.4rem;
+}
+
+.portfolio-copy p { color: var(--muted); margin: 0; }
+
+.portfolio-card:hover { transform: translateY(-10px); box-shadow: 0 22px 60px rgba(0,0,0,0.5); }
+
 .portfolio-section {
   background: rgba(255, 255, 255, 0.04);
 }
@@ -173,12 +210,20 @@ a {
   .logo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio-image { height: 280px; }
 }
 
 @media (max-width: 620px) {
-  .logo-grid {
+  .logo_grid {
     grid-template-columns: 1fr;
   }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-image { height: 220px; }
 }
 
 .hero-stats div {

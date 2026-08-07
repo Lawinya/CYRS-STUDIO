@@ -179,11 +179,39 @@ function renderLogoSamples() {
     .join('');
 }
 
+async function fetchAndRenderPortfolio() {
+  const grid = document.getElementById('portfolio-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('/api/portfolio');
+    if (!res.ok) throw new Error('failed');
+    const items = await res.json();
+    grid.innerHTML = items
+      .map(
+        (it) => `
+        <article class="portfolio-card fade-in">
+          <a href="${it.url}" target="_blank" rel="noopener">
+            <div class="portfolio-image" style="background-image:url('${it.image}')" aria-hidden="true"></div>
+            <div class="portfolio-copy">
+              <h3>${it.title}</h3>
+              <p>${it.description}</p>
+            </div>
+          </a>
+        </article>
+      `,
+      )
+      .join('');
+  } catch (err) {
+    grid.innerHTML = '<p class="muted">Unable to load portfolio items.</p>';
+  }
+}
+
 function init() {
   updateYear();
   renderHighlights();
   renderServices();
   renderLogoSamples();
+  fetchAndRenderPortfolio();
   revealOnScroll();
   rotateTagline();
 }

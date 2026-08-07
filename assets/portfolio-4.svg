@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="100%" height="100%" fill="#07111f" />
+  <rect x="60" y="60" width="1080" height="600" rx="28" fill="#4CE0C2" opacity="0.10" />
+  <g fill="#DDE8FF" font-family="Inter, Arial, sans-serif">
+    <text x="120" y="240" font-size="64" font-weight="700">Brand Refresh</text>
+    <text x="120" y="320" font-size="28" fill="#8da0b8">Identity refresh for a boutique brand</text>
+  </g>
+</svg>
