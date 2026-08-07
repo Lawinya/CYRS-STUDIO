@@ -1,12 +1,13 @@
 :root {
-  color-scheme: dark;
-  --bg: #07111f;
-  --panel: #0e1b2d;
-  --text: #f4f7fb;
-  --muted: #8da0b8;
-  --accent: #7c9dff;
-  --accent-2: #4ce0c2;
-  --border: rgba(255, 255, 255, 0.1);
+  color-scheme: light;
+  --bg: #fff;
+  --panel: #ffffff;
+  --text: #0b1220;
+  --muted: #6b7280;
+  --accent: #ff6b6b; /* coral */
+  --accent-2: #6bdeff; /* bright cyan */
+  --accent-3: #8a63ff; /* vibrant purple */
+  --border: rgba(11, 18, 32, 0.06);
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   margin: 0;
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
-  background: linear-gradient(135deg, #07111f 0%, #0f2138 100%);
+  background: linear-gradient(135deg, #fff 0%, #f7fbff 100%);
   line-height: 1.6;
 }
 
@@ -79,15 +80,13 @@ a {
 
 .hero-visual {
   border-radius: 1.6rem;
-  background: radial-gradient(circle at top left, rgba(124, 157, 255, 0.16), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(76, 224, 194, 0.14), transparent 35%),
-    rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, rgba(139, 99, 255, 0.06), rgba(255, 107, 107, 0.04));
   padding: 1.4rem;
   min-height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
 }
 
 .hero-visual svg {
