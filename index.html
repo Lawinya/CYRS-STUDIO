@@ -19,6 +19,7 @@
         </a>
         <div class="nav-links">
           <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#about">Mission</a>
           <a href="#contact">Contact</a>
         </div>
@@ -27,15 +28,32 @@
       <div class="container hero-content" id="home">
         <div class="hero-copy fade-in">
           <p class="eyebrow">Creative digital studio</p>
-          <h1 id="hero-headline">Designing Meaning Into Every Mark</h1>
+          <h1 id="hero-headline">We craft bold brands, beautiful websites, and meaningful launch experiences.</h1>
           <p class="lead" id="hero-subtitle">
-            CYRS STUDIO helps founders, teams, and brands turn vision into sharp,
-            high-impact online experiences.
+            CYRS STUDIO helps founders, teams, and brands turn vision into polished digital products that attract attention and convert customers.
           </p>
-          <span class="dynamic-tagline visible" id="dynamic-tagline">Brand identity that moves people.</span>
-          <a href="#contact" class="button primary">Start a project</a>
+          <div class="hero-actions">
+            <a href="#contact" class="button primary">Start a project</a>
+            <a href="#services" class="button outline">See services</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>120+</strong>
+              <span>clients helped</span>
+            </div>
+            <div>
+              <strong>8.7/10</strong>
+              <span>average review</span>
+            </div>
+            <div>
+              <strong>Launch-ready</strong>
+              <span>in 6 weeks</span>
+            </div>
+          </div>
         </div>
+
         <div class="hero-visual fade-in" aria-hidden="true">
+          <div class="hero-visual-shape"></div>
           <svg viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="hero-grad" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
@@ -43,7 +61,7 @@
                 <stop offset="1" stop-color="#4CE0C2" stop-opacity="0.55" />
               </linearGradient>
             </defs>
-            <path d="M68 244C80 118 208 36 326 58C444 80 490 224 430 338C370 452 168 438 88 334C8 230 56 330 68 244Z" fill="url(#hero-grad)" opacity="0.16" />
+            <path d="M68 244C80 118 208 36 326 58C444 80 490 224 430 338C370 452 168 438 88 334C8 230 56 330 68 244Z" fill="url(#hero-grad)" opacity="0.18" />
             <rect x="92" y="118" width="124" height="96" rx="22" fill="#0A1B32" stroke="#4CE0C2" stroke-width="4" />
             <rect x="126" y="148" width="58" height="10" rx="5" fill="#DDE8FF" opacity="0.85" />
             <rect x="126" y="172" width="98" height="10" rx="5" fill="#DDE8FF" opacity="0.65" />
@@ -61,15 +79,11 @@
             <path d="M96 62L108 74" stroke="#DDE8FF" stroke-width="4" stroke-linecap="round" />
           </svg>
         </div>
-        <div class="hero-card fade-in" aria-label="Studio highlights" id="hero-highlights">
-          <div class="card-pill">Strategy • Design • Build</div>
-          <ul id="highlight-list"></ul>
-        </div>
       </div>
     </header>
 
     <main>
-      <section class="section fade-in" id="services">
+      <section class="section spotlight" id="services">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">What we do</p>
@@ -83,19 +97,67 @@
         <div class="container split">
           <div>
             <p class="eyebrow">Our Mission</p>
-            <h2>Helping businesses express their identity through strategic, timeless, and memorable logo design.</h2>
+            <h2>Helping businesses express their identity through strategic, timeless, and memorable design.</h2>
+            <p>
+              We create brand systems and digital experiences that feel premium, polished, and purposeful.
+            </p>
           </div>
-          <p>
-            To help businesses express their identity through strategic, timeless, and memorable logo design that builds recognition, trust, and lasting value.
-          </p>
+          <div class="about-panel">
+            <article class="info-card fade-in">
+              <h3>Brand Strategy</h3>
+              <p>Clear messaging, visuals, and positioning for a confident brand launch.</p>
+            </article>
+            <article class="info-card fade-in">
+              <h3>Launch Design</h3>
+              <p>Design systems and marketing pages built to convert on first impressions.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section fade-in" id="contact">
+      <section class="section features fade-in">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Design that feels intentional, modern, and memorable.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="info-card fade-in">
+              <h3>Fast launches</h3>
+              <p>Move from idea to live website without losing brand quality.</p>
+            </article>
+            <article class="info-card fade-in">
+              <h3>Tailored systems</h3>
+              <p>Designs that reflect your story, not just a template.</p>
+            </article>
+            <article class="info-card fade-in">
+              <h3>Collaborative process</h3>
+              <p>Clear communication, regular reviews, and an easy partnership.</p>
+            </article>
+            <article class="info-card fade-in">
+              <h3>Refined details</h3>
+              <p>Small design choices that elevate trust and brand perception.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio-section fade-in" id="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Logo portfolio</p>
+            <h2>Featured identity systems for modern businesses.</h2>
+          </div>
+          <div class="logo-grid" id="logo-grid"></div>
+        </div>
+      </section>
+
+      <section class="section cta" id="contact">
         <div class="container contact-box fade-in">
           <div>
             <p class="eyebrow">Let’s connect</p>
             <h2>Ready to bring your next idea to life?</h2>
+            <p class="lead">Reach out for a friendly conversation about your brand, website, or full launch plan.</p>
           </div>
           <a href="mailto:cyrs8087@gmail.com" class="button secondary">cyrs8087@gmail.com</a>
         </div>

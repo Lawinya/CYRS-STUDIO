@@ -47,6 +47,50 @@ const siteData = {
       `,
     },
   ],
+  logoSamples: [
+    {
+      title: "Nova Collective",
+      label: "Creative agency",
+      mark: `
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="48" height="48" rx="16" fill="#7C9DFF" />
+          <path d="M20 42L32 22L44 42" stroke="#0B192F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      `,
+    },
+    {
+      title: "Aster Labs",
+      label: "Product studio",
+      mark: `
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="24" fill="#4CE0C2" />
+          <path d="M24 24H40" stroke="#0A1B32" stroke-width="6" stroke-linecap="round" />
+          <path d="M24 32H40" stroke="#0A1B32" stroke-width="6" stroke-linecap="round" />
+        </svg>
+      `,
+    },
+    {
+      title: "Pulse Studio",
+      label: "Lifestyle brand",
+      mark: `
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="44" height="44" rx="12" fill="#081423" />
+          <path d="M18 36L26 26L34 38L42 22L46 32" stroke="#7C9DFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      `,
+    },
+    {
+      title: "Cyris Craft",
+      label: "Design workshop",
+      mark: `
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 18H46V46H18V18Z" fill="#0E2131" />
+          <path d="M24 28H40" stroke="#4CE0C2" stroke-width="6" stroke-linecap="round" />
+          <path d="M24 36H38" stroke="#DDE8FF" stroke-width="6" stroke-linecap="round" />
+        </svg>
+      `,
+    },
+  ],
   mission: {
     headline: "Helping businesses express their identity through strategic, timeless, and memorable logo design.",
     text: "To help businesses express their identity through strategic, timeless, and memorable logo design that builds recognition, trust, and lasting value.",
@@ -117,10 +161,29 @@ function renderServices() {
     .join('');
 }
 
+function renderLogoSamples() {
+  const logoGrid = document.getElementById('logo-grid');
+  if (!logoGrid) return;
+  logoGrid.innerHTML = siteData.logoSamples
+    .map(
+      (sample) => `
+        <article class="logo-card fade-in">
+          <div class="logo-mark">${sample.mark}</div>
+          <div>
+            <h3>${sample.title}</h3>
+            <p>${sample.label}</p>
+          </div>
+        </article>
+      `,
+    )
+    .join('');
+}
+
 function init() {
   updateYear();
   renderHighlights();
   renderServices();
+  renderLogoSamples();
   revealOnScroll();
   rotateTagline();
 }

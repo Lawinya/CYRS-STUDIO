@@ -1,19 +1,13 @@
-<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#7C9DFF" />
-      <stop offset="100%" stop-color="#4CE0C2" />
-    </linearGradient>
-    <linearGradient id="accent" x1="40" y1="40" x2="120" y2="120" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F9FBFF" />
-      <stop offset="100%" stop-color="#DDE8FF" />
-    </linearGradient>
-  </defs>
-  <rect x="12" y="12" width="136" height="136" rx="40" fill="url(#bg)" />
-  <path d="M48 56C48 49.3726 53.3726 44 60 44H100C106.627 44 112 49.3726 112 56V95C112 101.627 106.627 107 100 107H60C53.3726 107 48 101.627 48 95V56Z" fill="#081423" fill-opacity="0.85" />
-  <path d="M64 60H96" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" />
-  <path d="M64 76H92" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" />
-  <path d="M64 92H84" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" />
-  <path d="M73 54L80 44L87 54" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M67 54C67 54 72.5 58 80 58C87.5 58 93 54 93 54" stroke="#4CE0C2" stroke-width="6" stroke-linecap="round" />
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" fill="transparent" />
+  <path d="M34 48C34 40.268 40.268 34 48 34H62C69.732 34 76 40.268 76 48V48" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" />
+  <path d="M48 34C30.326 34 16 48.326 16 66C16 83.674 30.326 98 48 98H64" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" />
+  <path d="M50 50L64 80L78 50" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M64 80V108" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" />
+  <path d="M84 50H104C113.941 50 122 58.059 122 68C122 77.941 113.941 86 104 86H84V50Z" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M84 68H102" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" />
+  <path d="M84 86L104 108" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" />
+  <path d="M118 54C118 46.268 110.732 39 103 39H94C86.268 39 79 46.268 79 54C79 61.732 86.268 69 94 69H104C111.732 69 119 76.268 119 84C119 91.732 111.732 99 104 99H90" fill="none" stroke="#111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="80" y="132" text-anchor="middle" fill="#111" font-family="Inter, Arial, sans-serif" font-size="12" letter-spacing="2">CYRS</text>
+  <text x="80" y="148" text-anchor="middle" fill="#111" font-family="Inter, Arial, sans-serif" font-size="8" letter-spacing="3">STUDIO</text>
 </svg>
